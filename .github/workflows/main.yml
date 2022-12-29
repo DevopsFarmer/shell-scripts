@@ -1,0 +1,8 @@
+name: Run shell script
+jobs:
+  run_script:
+    runs-on: ubuntu:latest
+    steps:
+      - name: Hello world
+        run: |
+         echo "Hello World"
