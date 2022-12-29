@@ -1,8 +1,13 @@
-name: Run shell script
+name: my workflow
+on: push
+
 jobs:
-  run_script:
+  name-of-job:
     runs-on: ubuntu:latest
+    defaults:
+      run:
+        shell: sh
     steps:
       - name: Hello world
         run: |
-         echo "Hello World"
+          echo "Hello World"
